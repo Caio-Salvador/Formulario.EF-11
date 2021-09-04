@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Cadastro Geral</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    </head>
+    <body>
+    <form class="form">
+            <fieldset class="generalRegister">
+                <legend>Cadastro Geral</legend>
+                <div class="middle">
+                    <fieldset class="pesonalData">
+                        <legend>Dados Pessoais</legend>
+                        <div>
+                            <label>Nome Completo:</label><br>
+                            <input type= "text" nome="nome" id="nome">
+                        </div>
+                        <div>
+                            <label>Profissão:</label><br>
+                            <select id="Profissão">
+                                <option selected disabled>Selecione sua profissão</option>   
+                                <option>Farmacêutico</option>
+                                <option>Enfermeiro</option>
+                                <option>Médico</option>
+                                <option>Outra...</option>
+                            </select> 
+                        </div>
+                    </fieldset>
+                    <fieldset class="localization">
+                        <legend>Localização</legend>                            
+                        <div>
+                            <label>E-mail:</label><br>
+                            <input type= "email" nome="email" id="email">
+                        </div>
+    
+                        <div>
+                            <label>Rua:</label><br>
+                            <input type= "text" nome="sobrenome" id="sobrenome">
+                        </div>                
+                    </fieldset>
+                </div>
+                <fieldset class="ageGroup">
+                    <legend>Faixa etária </legend>
+                    <div class="left">
+                        <label>
+                            <input type="radio" name="idade" value="Até 20 anos "> Até 20 anos 
+                        </label>
+                        <label>
+                            <input type="radio" name="idade" value="Mais de 20 até 30 anos"> Mais de 20 até 30 anos
+                        </label>
+                        <label>
+                            <input type="radio" name="idade" value="Mais de 30 até 40 anos"> Mais de 30 até 40 anos
+                        </label>
+                    </div>
+                    <div class="right">
+                        <label> 
+                            <input type="radio" name="idade" value="Mais de 40 até 50 anos"> Mais de 40 até 50 anos
+                        </label>
+                        <label>
+                            <input type="radio" name="idade" value="Mais de 50 até 60 anos"> Mais de 50 até 60 anos
+                        </label>
+                        <label>
+                            <input type="radio" name="idade" value="Mais de 60 anos"> Mais de 60 anos
+                        </label>
+                    </div>                    
+                </fieldset>
+
+                <div class="buttons">
+                    <button>Enviar</button>
+                    <input type="reset" value="Redefinir">
+                </div>
+        </fieldset>
+    </form>
+    </body>
+</html>
